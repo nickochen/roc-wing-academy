@@ -1,25 +1,21 @@
-# ROC Wing 新手飞行学院 🎓
+﻿# ROC Wing 新手配置向导 · 网页版 (带阳光/暗黑主题)
 
-极简、安全、游戏化的 WebSerial 配置向导，专为 ROC Wing 新手飞行员设计。
-替代复杂的 Mission Planner 配置流程，通过浏览器直连飞控，5 步完成首飞准备。
+单文件 Web 应用，通过浏览器 WebSerial 直连飞控（ArduPilot），按官方说明书步骤完成配置，**完全替代 Mission Planner** 的配置流程。
 
 ## ✨ 核心特性
-- **🌞 户外阳光模式**：高对比度 UI，专为飞场强光环境设计，一键切换。
-- **🛡️ 安全优先**：强制安全警告（禁用 18650 电池、严禁带桨解锁），动态健康体检。
-- **🎮 游戏化体验**：飞行员徽章系统、肌肉记忆训练动画、正反馈音效。
-- **⚡ 极简流程**：将 11 步工程师配置流精简为 5 步新手学院流。
-- **🔌 零安装**：基于 WebSerial API，Chrome/Edge 打开即用，无需安装任何软件。
+- **🌞 户外阳光模式 / 🌙 暗黑模式**：一键切换，专为飞场强光环境优化。
+- **🔌 零安装**：基于 WebSerial API，Chrome/Edge 打开即用。
+- **🛠️ 完整替代 MP**：保留说明书所有必要步骤、接线图、参数写入，不删减核心配置。
+- **🎮 交互式引导**：包含摇杆校准、解锁练习、模式语音播报等新手友好功能。
 
 ## 🚀 在线使用
-👉 [点击访问 ROC Wing 新手飞行学院](https://nickochen.github.io/roc-wing-academy/)
+👉 [点击访问 ROC Wing 配置向导](https://nickochen.github.io/roc-wing-academy/)
 
-## 🛠️ 本地开发
-```bash
-# 推荐使用本地服务器运行以支持完整的 WebSerial 权限
+## 💻 本地使用
+双击 `index.html`（需 Chrome / Edge），或启动本地服务器：
+``bash
 npx serve .
-# 或
-python -m http.server 8000
-```
+``
 
 ## 📄 许可证
-MIT License - 详见 [LICENSE](LICENSE) 文件。
+MIT License
