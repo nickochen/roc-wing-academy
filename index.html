@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROC Wing 新手飞行学院</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="logo">🎓</div>
+        <div class="title">
+            <h1>ROC WING <span class="sub">新手飞行学院</span></h1>
+            <p>5 步极简流程 · 安全首飞 · WebSerial 直连</p>
+        </div>
+        <div class="spacer"></div>
+        <button id="themeToggle" class="btn-icon" title="切换阳光/暗黑模式">☀️</button>
+        <div class="pill" id="connPill">
+            <span class="dot" id="connDot"></span>
+            <span id="connTxt">未连接</span>
+        </div>
+    </header>
+
+    <main class="layout">
+        <aside class="rail">
+            <div class="rail-head">飞行学院课程</div>
+            <div id="railSteps"></div>
+            <div class="rail-foot">
+                <div class="badge-box">
+                    <div class="badge-title">🏆 我的徽章</div>
+                    <div id="badges" class="badges-grid"></div>
+                </div>
+            </div>
+        </aside>
+        <section class="main">
+            <div class="stage" id="stageBody"></div>
+            <nav class="navbar">
+                <button class="btn btn-prev" id="btnPrev">← 上一课</button>
+                <span class="nav-hint" id="navHint"></span>
+                <div class="spacer"></div>
+                <button class="btn btn-next" id="btnNext">下一课 →</button>
+            </nav>
+        </section>
+    </main>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
